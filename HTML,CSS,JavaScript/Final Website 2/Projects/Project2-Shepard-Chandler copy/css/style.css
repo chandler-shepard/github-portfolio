@@ -1,0 +1,73 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #000000 url('../images/landscape-cliff.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+/* STRUCTURE */
+
+    /* Quote */
+
+.quotation {
+    position: relative;
+    width: 900px;
+    margin: 25px 10px 25px;
+    padding: 50px 50px;
+}
+.author {
+    text-align: center;
+    padding-right: 400px;
+}
+
+/* DESIGN */
+.quote {
+    border-top: 6px dotted grey;
+    border-bottom: 6px dotted grey;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+    width: 95%;
+}
+
+    /* Typography */
+p {
+    font-family: 'Courgette', 'Coustard', cursive, serif;
+    font-size: 30px;
+    color: rgb(138, 196, 230);
+
+}
+
+
+
+p:first-of-type::before {
+    position: absolute;
+    content: open-quote;
+    top: -40px;
+    left: -60px;
+    font-size: 80px;
+    font-family: 'Courgette', cursive;
+    color: gray
+}
+
+/*
+p:first-of-type::after {
+    position: absolute;
+    content: close-quote;
+    bottom: -160px;
+    right: -100px;
+    font-size: 100px;
+    color:gray;
+    font-family: 'Courgette',cursive;
+}
+
+*/
+
+
+

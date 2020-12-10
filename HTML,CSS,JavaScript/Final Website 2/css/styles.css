@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+/* natural box model */
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1050px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.0em 0.5em;
+}
+
+.resume_container {
+  max-width: 1050px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1.0em 0.5em;
+}
+
+
+/* BORDERS */
+.resume_container h4 {
+  border: 1px solid black;
+}
+
+
+/* HEADLINES */
+
+h3 {
+  text-align: center;
+  color: rgba(248, 194, 94);
+}
+
+
+/* HEADER */
+
+header .container{
+  
+  display: flex;
+  justify-content: center;
+  min-width: 480px;
+  background-image: url('../images/chicago.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  padding-bottom: 1.0em;
+}
+header h2 {
+  display: inline-block;
+  margin-top: 10.0em;
+  color: white;
+  padding-top: 4em;
+  
+}
+
+header .quote_page {
+  text-align: center;
+}
+
+
+
+
+/* NAV */
+
+nav {
+  border-bottom: 2px dotted black;
+  margin-bottom: 10px;
+
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2.0em;
+  color: rgba(248, 194, 94);
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul a {
+  color: black;
+  font-size: 1.0em;
+  font-weight: normal;
+
+}
+
+/* Links */
+
+a:hover, a:active {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.port {
+  text-align: center;
+}
+
+.port a {
+  color: rgba(248, 194, 94);
+  text-decoration: none;
+  font-size: 1.5em;
+  
+  
+}
+
+/* Resume
+
+*/
+
+.resume_link {
+ 
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  right: 100px;
+}
+
+.resume_link a {
+  color: rgba(248, 194, 94);
+  text-decoration: underline;
+}
+
+.wexperience h3 {
+  padding-bottom: 10px;
+}
+
+.tech h3 {
+  padding-bottom: 10px;
+}
+
+.education h3 {
+  padding-bottom: 10px;
+  margin: 2px;
+}
+
+
+.main_resume {
+  text-align: center;
+}
+.main_resume a {
+  color: rgba(248, 194, 94);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.0em;
+}
+
+
+/* OWL */
+.owl-carousel a:hover img {
+  opacity: 0.85 !important;
+}
+
+ .owl-carousel img {
+    height: 10rem;
+    background: lightskyblue;
+    padding: 1rem;
+} 
+/*
+section .container {
+  padding: 0 0;
+  
+}
+*/
+
+/* SOCAIL LINKS */
+
+.openbtn {
+  position: absolute;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  left: 15px;
+  top: 10px;
+}
+
+
+.sidenav {
+  border: 1px solid black;
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0; 
+  right: 0;
+  background-color: black;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  background: url('../images/organic-tiles.png');
+  background-size: cover;  
+}
+
+ /* The navigation menu links */
+ .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e0dddd;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(39, 190, 236);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: rgb(240, 236, 236);
+}
+
+.social {
+  position: fixed;
+  text-align: right;
+  right: 3px;
+  padding-top: 0;
+}
+
+.line {
+  border-left: 2px solid green;
+  opacity: 0.5;
+  height: 4.0em;
+  position: relative;
+  left: -5px;
+}
+
+footer h4 {
+  color: rgba(19, 48, 28, 0.959);
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+.pieces section {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index: 2;
+}
+
+
+.topping {
+  padding-top: 0px;
+  text-align: center;
+}
+
+
+.intro {
+  position: relative;
+  width: 50%;
+  float: right;
+  margin: 0px 30px;
+  text-align: center;
+}
+
+.intro h2 {
+  
+  font-family: 'Courgette', cursive;
+  color: grey;
+  font-size: 4.0em;
+  margin-bottom: 0px;
+ 
+}
+
+.intro p {
+  padding: 0px 20%;
+  font-size: 20px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  /* HOME PAGE */
+
+.home_main img {
+
+  position: relative;
+  left: 5%;
+}
+
+.home_main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+/* QUOTE PAGE */
+
+.quote_main img {
+  position: relative;
+  left: 5%;
+  float: left;
+}
+
+.quote_main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.quote_intro {
+  position: relative;
+  width: 50%;
+  float: right;
+  margin: 0px 30px;
+  text-align: center;
+
+}
+
+.quote_intro p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quote_intro ul {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quote_intro a {
+  color: rgba(248, 194, 94);
+  text-decoration: none;
+  font-size: 1.0em;
+}
+
+/* WIREFRAME PAGE */
+
+.wireframe_main img {
+position: relative;
+  float: left;
+}
+
+.wireframe_main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wireframe_intro p {
+  float: right;
+  font-size: 20px;
+  padding-left: 15px;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  .wireframe_intro {
+  position: relative;
+  width: 50%;
+  float: right;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.wireframe_intro a {
+  color: rgba(248, 194, 94);
+  text-decoration: underline;
+  font-size: 1.0em;
+}
+
+
+/* GUESS MY CARD */ 
+
+.guessCard_main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.guessCard_main img {
+  position: relative;
+  float: right;
+  border: 3px solid grey;
+}
+
+.guessCard_intro {
+  position: relative;
+  width: 50%;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+}
+
+.guessCard_intro p {
+  float: left;
+  font-size: 20px;
+  padding-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.guessCard_intro a {
+  color: rgba(248, 194, 94);
+  text-decoration: none;
+  font-size: 1.0em;
+}
+
+.guessCard_intro ul {
+  text-align: left;
+  padding-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* DOG PAGE */
+.dog_main p {
+  position: relative;
+  float: left;
+  width: 50%;
+  font-size: 20px;
+  padding-right: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dog_main {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.dog_main section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.dog_main ul {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  width: 50%;
+  float: left;
+  top: 40px;
+  right: -20px;
+  font-size: 17px;
+  text-align: left;
+  font-size: 17px;
+}
+
+.dog_main a {
+  position: relative;
+  float: right; 
+  left: 125px;
+  color: rgba(248, 194, 94);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav {font-size: 15px;}
+  .wireframe_intro {margin-left: 10px;}
+  .guessCard_intro {margin-left: 0px;}
+  .intro {width: 100%;}
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

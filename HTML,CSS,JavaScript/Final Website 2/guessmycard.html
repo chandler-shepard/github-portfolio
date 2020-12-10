@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Guess My Card
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandler Shepard - Guess My Card</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/3680edfbdb.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x">Facebook</i></a>
+                    <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x">Twitter</i></a>
+                    <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1dx">Instagram</i></a>
+            </div>
+        
+            <span style="font-size:20px;cursor:pointer;padding-left: 100%;color: rgba(248, 194, 94);text-decoration: underline;" onclick="openNav()">&#9776;Social</span>
+            </div>
+        <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html">Chandler Shepard</a>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center;">Guess My Card</h2>
+
+    <section class="guessCard_main">
+        <h1 class="sr-only">Main section</h1>
+
+        <section class="guessCard_intro">
+            <h2 class="sr-only">Page Introduction</h2>
+            <p><em>About The Task:</em><br>
+                The purpose of this task was to allow the user to guess a playng card 
+                rank and suit. From there the user would be told if they got the suit correct and
+                if the rank that they chose was either too high or too low. This task was built in
+                python using html and cgi. inorder to complete this I had to have a program that would
+            </p>
+                <ul>
+                    <li>Use a form to get information from the user</li>
+                    <li>Compare that information with a random generated rank and suit</li>
+                    <li>Output the results into a new page</li>
+                    <li>Use the guessed rank and suit to post the correct playing card they guessed</li>
+                </ul>
+            <a href="http://cgi.soic.indiana.edu/~chashepa/guessmycard.html" target="_blank">Play Guess My Card</a>
+
+        </section>
+
+
+        <section>
+        <h2 class="sr-only">Website Image</h2>
+                <img src="images/GuessMyCard.png" alt="Guess My Card Website">
+        </section>
+
+    </section>
+
+     <footer>
+        <div class="container">
+            <section>
+                <h4><span class='line'></span>We're so busy watching out for what's just 
+                            ahead of us that <br>we don't take time to enjoy where we are.”</h4>
+            </section>
+            <section>
+                <h2 class="sr-only">Social Media</h2>
+                    <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x"></i></a>
+                    <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1x"></i></a>
+            
+            </section>
+        </div>
+            
+    </footer>
+
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>

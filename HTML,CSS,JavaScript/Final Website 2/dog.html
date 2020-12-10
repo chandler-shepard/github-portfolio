@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Dog Adoption Website
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandler Shepard - Dog Adoption</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/3680edfbdb.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href="plugins/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/owl/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+			.owl-next span, .owl-prev span {
+				font-size: 200%;
+				font-weight: bold;
+			}
+	</style>
+
+</head>
+
+<body>
+    <div class="container">
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x">Facebook</i></a>
+                    <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x">Twitter</i></a>
+                    <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1dx">Instagram</i></a>
+            </div>
+        
+            <span style="font-size:20px;cursor:pointer;padding-left: 100%;color: rgba(248, 194, 94);text-decoration: underline;" onclick="openNav()">&#9776;Social</span>
+    </div>
+        <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html">Chandler Shepard</a>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center;">Dog Adoption Website</h2>
+
+    <article class="dog_main">
+
+    <div class="container">
+    <section>
+    <img src="images/pet_website.png" alt="Pet Website">
+    </section>
+    
+    <section>
+    <p><em>About The Project:</em><br>
+        The purpose of this project was to create a responsive 
+        home page for a website using HTML5, CSS and Flexbox to structure the page.
+        This could be a rendition of an exisiting 
+        website or a totally made up one. To complete this 
+        project certain areas had to be attended to. These included
+    </p>
+    <ul>
+        <li>Flexbox and box model positioning</li>
+        <li>Using web typography and styling with color and textures.</li>
+        <li>Project planning(finding resources,outline sketching).</li>
+        <li>Navigation setup</li>
+    </ul>
+    
+    <a href="Projects/Project 3-Shepard-Chandler copy/index.html" target="_blank">View the Website</a>
+    </section>
+</div>
+</article>
+
+
+<div class="container">
+
+    <h1>Dogs Included</h1>
+
+    <div class="owl-carousel owl-theme">
+            <a href="#"><img src="images/Lily_pic.jpg" alt="Lily"></a>
+            <a href="#"><img src="images/Penny_pic.jpg" alt="Penny"></a>
+            <a href="#"><img src="images/Rosey_pic.jpg" alt="Rosey"></a>
+            <a href="#"><img src="images/Lily_pic.jpg" alt="Lily"></a>
+            <a href="#"><img src="images/Penny_pic.jpg" alt="Penny"></a>
+            <a href="#"><img src="images/Rosey_pic.jpg" alt="Rosey"></a>
+            <a href="#"><img src="images/Lily_pic.jpg" alt="Lily"></a>
+            <a href="#"><img src="images/Penny_pic.jpg" alt="Penny"></a>
+            <a href="#"><img src="images/Rosey_pic.jpg" alt="Rosey"></a>           
+     
+            
+        </div>
+    
+</div>
+
+
+
+
+
+
+<footer>
+        <div class="container">
+            <section>
+                <h4><span class='line'></span>We're so busy watching out for what's just 
+                            ahead of us that <br>we don't take time to enjoy where we are.”</h4>
+            </section>
+            <section>
+                <h2 class="sr-only">Social Media</h2>
+                    <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x"></i></a>
+                    <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1x"></i></a>
+            
+            </section>
+        </div>
+            
+</footer>
+
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="plugins/owl/owl.carousel.min.js"></script>
+
+<script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsiveRefreshRate:100,
+                responsive:{
+                    0:{
+                        items:1,
+                         nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:5,
+                        nav:true,
+                        loop:false
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

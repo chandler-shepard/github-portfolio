@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Portfolio Page
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandler Shepard - Portfolio</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/3680edfbdb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="container">
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x">Facebook</i></a>
+                        <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x">Twitter</i></a>
+                        <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1dx">Instagram</i></a>
+                </div>
+            
+                <span style="font-size:20px;cursor:pointer;padding-left: 100%;color: rgba(248, 194, 94);text-decoration: underline;" onclick="openNav()">&#9776;Social</span>
+                </div>
+        
+            <!-- Navigation -->
+            <nav>
+                <div class="container">
+                    <a href="index.html">Chandler Shepard</a>
+                    <ul>
+                        <li><a href="index.html">Intro</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+<!-- Navigation -->
+
+    <!-- Pieces of Work -->
+    <article class="pieces">
+        <div class="container">
+            <h2>Projects</h2>
+            <h3 class="sr-only">Projects</h3>
+            <section>
+
+                <!-- Dogs web 
+                Photo by Jay Wennington on Unsplash -->
+                <figure>
+                    <a href="dog.html">
+                        <img src="images/dogs.jpg" alt="Dogs"></a>
+                    <figcaption>Dog website</figcaption>
+                </figure>
+               
+                <!-- Quote 
+                Photo by Kace Rodriguez on Unsplash-->
+                <figure>
+                    <a href="quote.html">
+                        <img src="images/coastline.jpg" alt="Coastline">
+                    </a>
+                    <figcaption>Quote Webpage</figcaption>
+                </figure>
+                
+                <!-- Playing Cards
+                Photo by Esteban Lopez on Unsplash -->
+               <figure>
+                   <a href="guessmycard.html">
+                       <img src="images/playing-card.jpg" alt="Playing Cards">
+                   </a>
+                   <figcaption>Guess My Card</figcaption>
+               </figure>
+                    
+               <!-- Wireframe 
+                Photo by Alvaro Reyes on Unsplash-->
+               <figure>
+                   <a href="wireframe.html">
+                       <img src="images/wireframe.jpg" alt="Wireframe">
+                   </a>
+                   <figcaption>Wireframe</figcaption>
+               </figure>
+                
+
+            </section>
+        </div>
+    </article>
+
+    <footer>
+            <div class="container">
+                <section>
+                    <h4><span class='line'></span>We're so busy watching out for what's just 
+                        ahead of us that <br>we don't take time to enjoy where we are.”</h4>
+                </section>
+                <section>
+        
+                    <h2 class="sr-only">Social Media</h2>
+                    <a href="https://www.facebook.com/chandler.shepard.3"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="https://twitter.com/chanshep"><i class="fab fa-twitter fa-1x"></i></a>
+                    <a href="https://www.instagram.com/chandler_shep"><i class="fab fa-instagram fa-1x"></i></a>
+        
+                </section>
+            </div>
+        
+        </footer>
+    <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+</body>
+</html>
